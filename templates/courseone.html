@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>{{table_name}}</h1>
+    <table border="1">
+        <tr>
+            <th>Department ID</th>
+            <th>Department Name</th>
+            <th>No of Teachers</th>
+        </tr>
+
+        {% for department in departments %}
+        <tr>
+            <td>{{department.id}}</td>
+            <td>{{department.name}}</td>
+            <td>{{department.no_of_teachers}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
